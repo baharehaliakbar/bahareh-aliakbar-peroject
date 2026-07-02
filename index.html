@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>پروژه معرفی موزه‌های تهران</title>
+    <style>
+        /* استایل‌های طراحی شده برای درس ابزارهای طراحی وب */
+        body {
+            font-family: Tahoma, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef;
+            color: #333;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 50px 10px;
+            text-align: center;
+        }
+
+        .main-container {
+            width: 85%;
+            margin: 30px auto;
+        }
+
+        /* بخش کارت‌های موزه */
+        .museum-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .m-card {
+            background-color: #fff;
+            width: 320px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none; /* حذف خط زیر لینک */
+            color: #333;
+            overflow: hidden;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .m-card:hover {
+            border-color: #007bff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .m-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .m-card h2 {
+            font-size: 1.3rem;
+            margin: 15px 0;
+            color: #2c3e50;
+        }
+
+        .m-card p {
+            font-size: 0.9rem;
+            padding: 0 15px 20px 15px;
+            color: #666;
+        }
+
+        /* بخش اطلاعات دانشجو و استاد */
+        .about-box {
+            background-color: #ffffff;
+            margin-top: 50px;
+            padding: 25px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .about-box h2 {
+            color: #343a40;
+            border-bottom: 2px solid #343a40;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        .info-row {
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+        }
+
+        .info-label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.8rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>مجموعه موزه‌های تاریخی تهران</h1>
+        <p>پروژه درس ابزارهای طراحی وب</p>
+    </header>
+
+    <div class="main-container">
+        
+        <!-- لیست موزه‌ها -->
+        <div class="museum-wrapper">
+            
+            <!-- موزه اول - لینک مستقیم به سایت رسمی یا صفحه مربوطه -->
+            <a href="https://fa.wikipedia.org/wiki/%DA%A9%D8%A7%D8%AE_%DA%AF%D9%84%D8%B3%D8%AA%D8%A7%D9%86/" target="_blank" class="m-card">
+                <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAF9jupR1IctGKq_nKkVjeApbS30RpEdVdDO6RuGl6nEbuomqdz710PZ1gjmv05KTsltSB-b-lPl7g6wdUS8Y4gK7IXCC6RYYDb9GsQ-Hb-_iy3TqtcK1uIl7aYXJGSxu5Zk_-zO=s680-w680-h510-rw" alt="کاخ گلستان">
+                <h2>کاخ گلستان</h2>
+                <p>مشاهده سایت رسمی کاخ گلستان</p>
+            </a>
+
+            <!-- موزه دوم -->
+            <a href="https://fa.wikipedia.org/wiki/%D9%85%D9%88%D8%B2%D9%87_%D8%AF%D9%81%DB%8C%D9%86%D9%87" target="_blank" class="m-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/National_Museum_of_Persia.jpg/330px-National_Museum_of_Persia.jpg" alt="موزه ملی">
+                <h2>موزه ملی ایران</h2>
+                <p>مشاهده سایت رسمی موزه ملی</p>
+            </a>
+
+            <!-- موزه سوم -->
+            <a href="https://fa.wikipedia.org/wiki/%D9%85%D9%88%D8%B2%D9%87_%D8%AF%D9%81%DB%8C%D9%86%D9%87" target="_blank" class="m-card">
+                <img src="https://www.beytoote.com/images/stories/iran/money-museum-01.jpg" alt="موزه پول">
+                <h2>موزه پول</h2>
+                <p>مشاهده سایت مربوط به بانک مرکزی</p>
+            </a>
+
+
+              </div>
+
+        <!-- بخش مشخصات پروژه -->
+        <div class="about-box">
+            <h2>اطلاعات پروژه</h2>
+            <div class="info-row">
+                <span class="info-label">نام دانشجو:</span> بهاره علی اکبر
+            </div>
+            <div class="info-row">
+                <span class="info-label">نام استاد:</span> علیرضا میرزایی نژاد
+            </div>
+            <div class="info-row">
+                <span class="info-label">نام درس:</span> ابزارهای طراحی وب
+            </div>
+        </div>
+
+    </div>
+
+    
